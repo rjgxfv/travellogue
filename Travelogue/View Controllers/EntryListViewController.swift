@@ -1,5 +1,5 @@
 //
-//  EntryViewController.swift
+//  EntryListViewController.swift
 //  Travelogue
 //
 //  Created by Robert on 5/2/19.
@@ -10,7 +10,7 @@ import UIKit
 import CoreData
 let formatter = DateFormatter()
 
-class EntryViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
+class EntryListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
 
     @IBOutlet weak var tableView: UITableView!
     var trip: Trip?
@@ -68,7 +68,7 @@ class EntryViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
-        if let destination = segue.destination as? EditorViewController{
+        if let destination = segue.destination as? EntryCreatorViewController{
             destination.trip = trip
             if let row = tableView.indexPathForSelectedRow?.row{
                 destination.sentEntry = entries[row]

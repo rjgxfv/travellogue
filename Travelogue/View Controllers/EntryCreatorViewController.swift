@@ -1,5 +1,5 @@
 //
-//  EditorViewController.swift
+//  EntryCreatorViewController.swift
 //  Travelogue
 //
 //  Created by Robert on 5/2/19.
@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class EditorViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class EntryCreatorViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     var trip : Trip?
     var sentEntry: Entry?
     let imagePicker = UIImagePickerController()
@@ -96,7 +96,7 @@ class EditorViewController: UIViewController, UIImagePickerControllerDelegate, U
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
-        if let destination = segue.destination as? EntryViewController{
+        if let destination = segue.destination as? EntryListViewController{
             destination.trip = trip
         }
     }

@@ -1,5 +1,5 @@
 //
-//  TripsViewController.swift
+//  TripListViewController.swift
 //  Travelogue
 //
 //  Created by Robert on 5/2/19.
@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class tripsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class TripListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var trips = [Trip]()
     @IBOutlet weak var tableView: UITableView!
     
@@ -78,7 +78,7 @@ class tripsViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
-        if let destination = segue.destination as? EntryViewController ,
+        if let destination = segue.destination as? EntryListViewController ,
             let row = tableView.indexPathForSelectedRow?.row{
             destination.trip = trips[row]
         }

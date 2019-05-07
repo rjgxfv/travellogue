@@ -2,9 +2,8 @@
 //  Entry+CoreDataProperties.swift
 //  Travelogue
 //
-//  Created by Kyle Moore on 12/6/18.
-//  Copyright © 2018 Kyle Moore. All rights reserved.
-//
+//  Created by Robert on 5/2/19.
+//  Copyright © 2019 Robert. All rights reserved.
 //
 
 import Foundation

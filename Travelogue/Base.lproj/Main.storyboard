@@ -24,12 +24,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ehr-MM-jfh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1266" y="1731"/>
+            <point key="canvasLocation" x="-1343" y="2500"/>
         </scene>
         <!--Trips-->
         <scene sceneID="37d-Wz-msj">
             <objects>
-                <viewController id="OSQ-Ov-DRa" customClass="tripsViewController" customModule="Travelogue" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="OSQ-Ov-DRa" customClass="TripListViewController" customModule="Travelogue" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BCk-qr-Rbn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -93,7 +93,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jSn-br-4Ai" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-271" y="2038"/>
+            <point key="canvasLocation" x="-271" y="2499"/>
         </scene>
         <!--Make a Trip!-->
         <scene sceneID="AvC-Cu-SRm">
@@ -142,25 +142,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fk2-pv-hlL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="671" y="1560"/>
+            <point key="canvasLocation" x="-271" y="3458"/>
         </scene>
         <!--Trip Entry-->
         <scene sceneID="92D-fh-jiw">
             <objects>
-                <viewController id="dAM-pp-4Z2" customClass="EntryViewController" customModule="Travelogue" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="dAM-pp-4Z2" customClass="EntryListViewController" customModule="Travelogue" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bge-ak-d9S">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ExQ-dJ-D7h">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ExQ-dJ-D7h">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="entryCell" rowHeight="85" id="EkC-sD-0Rc" customClass="EntryTableViewCell" customModule="Travelogue" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="85"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="entryCell" rowHeight="90" id="EkC-sD-0Rc" customClass="EntryTableViewCell" customModule="Travelogue" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EkC-sD-0Rc" id="DSR-gK-6cN">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="84.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="89.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBU-5g-5we">
@@ -231,12 +231,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NYd-eV-Gly" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="670" y="2501"/>
+            <point key="canvasLocation" x="710" y="2499"/>
         </scene>
         <!--Entry-->
         <scene sceneID="6a5-pj-VNc">
             <objects>
-                <viewController id="IEg-qL-ggF" customClass="EditorViewController" customModule="Travelogue" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="IEg-qL-ggF" customClass="EntryCreatorViewController" customModule="Travelogue" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="O4F-f6-6Z7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -319,7 +319,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aCJ-eX-ux2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1716" y="2500"/>
+            <point key="canvasLocation" x="1940" y="2499"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
